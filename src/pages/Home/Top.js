@@ -15,12 +15,11 @@ const Top = () => {
   `;
 
   const TopWrapper = styled.div`
-  width: 1000px;
+  width: 980px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  padding-right: 30px;
   `;
 
   const TopContainer = styled.div`
@@ -49,6 +48,7 @@ const Top = () => {
   gap: 12px;
   background-color: #FFFFFF;
   border: 1px solid #DDDDDD;
+  z-index: 1;
   `;
 
   const TopListText = styled(TopText)`

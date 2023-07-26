@@ -2,32 +2,32 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import $ from 'jquery';
 
-import LogoImg from '../../assets/logo.png';
-import {ReactComponent as CategoryImg } from '../../assets/category.svg';
-import {ReactComponent as UserImg } from '../../assets/user.svg';
-import {ReactComponent as CartImg } from '../../assets/cart.svg';
-import {ReactComponent as MicImg } from '../../assets/mic.svg';
-import {ReactComponent as SearchImg } from '../../assets/search.svg';
-import {ReactComponent as LeftArrowImg } from '../../assets/left_arrow.svg';
-import {ReactComponent as RightArrowImg } from '../../assets/right_arrow.svg';
-import {ReactComponent as BlueRocketImg } from '../../assets/rocket_blue.svg';
-import {ReactComponent as GreenRocketImg } from '../../assets/rocket_green.svg';
-import {ReactComponent as PulpleRocketImg } from '../../assets/rocket_purple.svg';
-import BizImg from '../../assets/biz.png';
-import NewImg from '../../assets/new.png';
-import BoxImg from '../../assets/box.png';
-import WowImg from '../../assets/wow.png';
-import CouponImg from '../../assets/coupon.png';
-import MarketImg from '../../assets/market.png';
-import TruckImg from '../../assets/truck.png';
-import AirplaneImg from '../../assets/airplane.png';
-import BalloonImg from '../../assets/balloon.png';
+import LogoImg from '../../../assets/logo.png';
+import {ReactComponent as CategoryImg } from '../../../assets/category.svg';
+import {ReactComponent as UserImg } from '../../../assets/user.svg';
+import {ReactComponent as CartImg } from '../../../assets/cart.svg';
+import {ReactComponent as MicImg } from '../../../assets/mic.svg';
+import {ReactComponent as SearchImg } from '../../../assets/search.svg';
+import {ReactComponent as LeftArrowImg } from '../../../assets/left_arrow.svg';
+import {ReactComponent as RightArrowImg } from '../../../assets/right_arrow.svg';
+import {ReactComponent as BlueRocketImg } from '../../../assets/rocket_blue.svg';
+import {ReactComponent as GreenRocketImg } from '../../../assets/rocket_green.svg';
+import {ReactComponent as PulpleRocketImg } from '../../../assets/rocket_purple.svg';
+import BizImg from '../../../assets/biz.png';
+import NewImg from '../../../assets/new.png';
+import BoxImg from '../../../assets/box.png';
+import WowImg from '../../../assets/wow.png';
+import CouponImg from '../../../assets/coupon.png';
+import MarketImg from '../../../assets/market.png';
+import TruckImg from '../../../assets/truck.png';
+import AirplaneImg from '../../../assets/airplane.png';
+import BalloonImg from '../../../assets/balloon.png';
 
 const Header = () => {
   const Blue = '#4285f4';
 
   const Header = styled.div`
-  width: 100%;
+  width: 980px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -64,11 +64,13 @@ const Header = () => {
   `;
 
   const HeaderMenu = styled.div`
+  width: 870px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
+  margin-bottom: 10px;
   gap: 20px;
   `;
 
@@ -82,7 +84,7 @@ const Header = () => {
   `;
 
   const SearchForm = styled.div`
-  width: 518px;
+  width: 488px;
   height: 37px;
   display: flex;
   flex-flow: row nowrap;
@@ -129,6 +131,8 @@ const Header = () => {
   max-height: 238px;
   padding: 10px 0 10px 10px;
   border: 1px solid #ddd;
+  background-color: #FFFFFF;
+  z-index: 1;
   font-size: 12px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -150,7 +154,7 @@ const Header = () => {
   `;
 
   const SearchInput = styled.input`
-  width: 310px;
+  width: 283px;
   height: 33px;
   font-size: 14px;
   text-indent: 10px;
@@ -186,19 +190,21 @@ const Header = () => {
 
   const MicIcon = styled(MicImg)`
   cursor: pointer;
-  width: 34.5px;
+  width: 20px;
   height: 20px;
+  margin: 0 5px 0 10px;
   `;
 
   const SearchIcon = styled(SearchImg)`
   cursor: pointer;
-  width: 34.5px;
+  width: 20px;
   height: 20px;
+  margin: 0 10px 0 5px;
   `;
 
   const HeaderSideMenu = styled.div`
   position: relative;
-  width: 1020px;
+  width: 870px;
   height: 32px;
   display: flex;
   flex-flow: row nowrap;
@@ -235,7 +241,7 @@ const Header = () => {
 
   const HeaderSideMenuList = styled.ul`
   position: relative;
-  width: 920px;
+  width: 780px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
