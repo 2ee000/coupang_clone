@@ -37,8 +37,8 @@ const Top = () => {
   `;
 
   const [TopListTransition, setTopListTransition] = useState('hidden');
-  const TopList = styled.div`
-  visibility: ${TopListTransition};
+                    const TopList = styled.div`
+                    visibility: ${TopListTransition};
   position: absolute;
   top: 34px;
   right: -34px;

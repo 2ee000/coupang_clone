@@ -19,7 +19,7 @@ const Home = () => {
   min-width: 1020px;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   `;
 
