@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
-import $ from 'jquery';
+import React from 'react';
+import styled from 'styled-components';
 
 import Top from './Top';
 import Header from './Header/Header';
+import Banner from './Banner/Banner';
+import Body from './Body/Body'
 
 const Home = () => {
-  const Blue = '#4285f4';
-
   const App = styled.div`
   width: 100%;
   height: 100vh;
@@ -28,6 +27,8 @@ const Home = () => {
       <Container>
         <Top/>
         <Header/>
+        <Banner/>
+        <Body/>
       </Container>
     </App>
   )

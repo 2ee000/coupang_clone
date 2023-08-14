@@ -6,7 +6,7 @@ import { ReactComponent as LeftArrowImg } from 'assets/left_arrow.svg';
 import { ReactComponent as RightArrowImg } from 'assets/right_arrow.svg';
 import { ReactComponent as BlueRocketImg } from 'assets/rocket_blue.svg';
 import { ReactComponent as GreenRocketImg } from 'assets/rocket_green.svg';
-import { ReactComponent as PulpleRocketImg } from 'assets/rocket_purple.svg';
+import { ReactComponent as PurpleRocketImg } from 'assets/rocket_purple.svg';
 import BizImg from 'assets/biz.png';
 import NewImg from 'assets/new.png';
 import BoxImg from 'assets/box.png';
@@ -42,7 +42,7 @@ const HeaderSideMenu = () => {
   width: 25px;
   height: 25px;
   & path {
-    fill: gray;
+    stroke: gray;
   }
   `;
 
@@ -51,7 +51,7 @@ const HeaderSideMenu = () => {
   width: 25px;
   height: 25px;
   & path {
-    fill: gray;
+    stroke: gray;
   }
   `;
 
@@ -115,7 +115,7 @@ const HeaderSideMenu = () => {
   height: 20px;
   `;
 
-  const PurpleRocketIcon = styled(PulpleRocketImg)`
+  const PurpleRocketIcon = styled(PurpleRocketImg)`
   width: 20px;
   height: 20px;
   `;
