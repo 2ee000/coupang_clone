@@ -2,20 +2,20 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import $ from 'jquery';
 
-import { ReactComponent as LeftArrowImg } from 'assets/left_arrow.svg';
-import { ReactComponent as RightArrowImg } from 'assets/right_arrow.svg';
-import { ReactComponent as BlueRocketImg } from 'assets/rocket_blue.svg';
-import { ReactComponent as GreenRocketImg } from 'assets/rocket_green.svg';
-import { ReactComponent as PurpleRocketImg } from 'assets/rocket_purple.svg';
-import BizImg from 'assets/biz.png';
-import NewImg from 'assets/new.png';
-import BoxImg from 'assets/box.png';
-import WowImg from 'assets/wow.png';
-import CouponImg from 'assets/coupon.png';
-import MarketImg from 'assets/market.png';
-import TruckImg from 'assets/truck.png';
-import AirplaneImg from 'assets/airplane.png';
-import BalloonImg from 'assets/balloon.png';
+import { ReactComponent as LeftArrowImg } from 'assets/home/left_arrow.svg';
+import { ReactComponent as RightArrowImg } from 'assets/home/right_arrow.svg';
+import { ReactComponent as BlueRocketImg } from 'assets/home/rocket_blue.svg';
+import { ReactComponent as GreenRocketImg } from 'assets/home/rocket_green.svg';
+import { ReactComponent as PurpleRocketImg } from 'assets/home/rocket_purple.svg';
+import BizImg from 'assets/home/biz.png';
+import NewImg from 'assets/home/new.png';
+import BoxImg from 'assets/home/box.png';
+import WowImg from 'assets/home/wow.png';
+import CouponImg from 'assets/home/coupon.png';
+import MarketImg from 'assets/home/market.png';
+import TruckImg from 'assets/home/truck.png';
+import AirplaneImg from 'assets/home/airplane.png';
+import BalloonImg from 'assets/home/balloon.png';
 const HeaderSideMenu = () => {
 
   const HeaderSideMenu = styled.div`

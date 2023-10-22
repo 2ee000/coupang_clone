@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import LogoImg from 'assets/logo.png';
+import LogoImg from 'assets/home/logo.png';
 
 const Banner = () => {
   const Blue = '#4285f4';

@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import NewImg from 'assets/new.png';
-import { ReactComponent as CategoryImg } from 'assets/category.svg';
-import { ReactComponent as ClothesImg} from 'assets/clothes.svg';
-import { ReactComponent as BeautyImg} from 'assets/beauty.svg';
-import { ReactComponent as BabyImg} from 'assets/face.svg';
-import { ReactComponent as FoodImg} from 'assets/apple.svg';
-import { ReactComponent as ForkKnifeImg} from 'assets/fork_knife.svg';
-import { ReactComponent as DrawerImg} from 'assets/drawer.svg';
-import { ReactComponent as HouseImg} from 'assets/house.svg';
-import { ReactComponent as CameraImg} from 'assets/camera.svg';
-import { ReactComponent as BallImg} from 'assets/ball.svg';
-import { ReactComponent as CarImg} from 'assets/car.svg';
-import { ReactComponent as BookImg} from 'assets/book.svg';
-import { ReactComponent as GameImg} from 'assets/game.svg';
-import { ReactComponent as PencilImg} from 'assets/pencil.svg';
-import { ReactComponent as AnimalImg} from 'assets/animal.svg';
-import { ReactComponent as FitnessImg} from 'assets/fitness.svg';
-import { ReactComponent as AirPlaneImg} from 'assets/airplane.svg';
-import { ReactComponent as StarImg} from 'assets/star.svg';
+import NewImg from 'assets/home/new.png';
+import { ReactComponent as CategoryImg } from 'assets/home/category.svg';
+import { ReactComponent as ClothesImg} from 'assets/home/clothes.svg';
+import { ReactComponent as BeautyImg} from 'assets/home/beauty.svg';
+import { ReactComponent as BabyImg} from 'assets/home/face.svg';
+import { ReactComponent as FoodImg} from 'assets/home/apple.svg';
+import { ReactComponent as ForkKnifeImg} from 'assets/home/fork_knife.svg';
+import { ReactComponent as DrawerImg} from 'assets/home/drawer.svg';
+import { ReactComponent as HouseImg} from 'assets/home/house.svg';
+import { ReactComponent as CameraImg} from 'assets/home/camera.svg';
+import { ReactComponent as BallImg} from 'assets/home/ball.svg';
+import { ReactComponent as CarImg} from 'assets/home/car.svg';
+import { ReactComponent as BookImg} from 'assets/home/book.svg';
+import { ReactComponent as GameImg} from 'assets/home/game.svg';
+import { ReactComponent as PencilImg} from 'assets/home/pencil.svg';
+import { ReactComponent as AnimalImg} from 'assets/home/animal.svg';
+import { ReactComponent as FitnessImg} from 'assets/home/fitness.svg';
+import { ReactComponent as AirPlaneImg} from 'assets/home/airplane.svg';
+import { ReactComponent as StarImg} from 'assets/home/star.svg';
 
 const Category = () => {
   const Blue = '#4285f4';

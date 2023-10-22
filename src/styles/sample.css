@@ -6,4 +6,17 @@ background-repeat: no-repeat;
 overflow: hidden;
 color: #d5ffc8;
 color: #00ff55;
+background-position: center;
+animation: ChangeBanner 5s in;
+font-weight: bolder;
+align-self: flex-start;
+font-style: italic;
+font-weight: bolder;
+font-weight: normal;
+position: absolute;
+background-size: contain;
+background-repeat: no-repeat;
+}
+a {
+  position: fixed;
 }

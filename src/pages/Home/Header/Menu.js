@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import LogoImg from 'assets/logo.png';
-import {ReactComponent as UserImg } from 'assets/user.svg';
-import {ReactComponent as CartImg } from 'assets/cart.svg';
-import {ReactComponent as MicImg } from 'assets/mic.svg';
-import {ReactComponent as SearchImg } from 'assets/search.svg';
+import LogoImg from 'assets/home/logo.png';
+import {ReactComponent as UserImg } from 'assets/home/user.svg';
+import {ReactComponent as CartImg } from 'assets/home/cart.svg';
+import {ReactComponent as MicImg } from 'assets/home/mic.svg';
+import {ReactComponent as SearchImg } from 'assets/home/search.svg';
 
 const HeaderMenu = () => {
   const Blue = '#4285f4';
@@ -121,8 +121,31 @@ const HeaderMenu = () => {
   `;
 
   const UserMenuText = styled.p`
+  display: grid;
   font-size: 12px;
   color: #333333;
+  `;
+
+  const [UserMenuListTransition, setUserMenuListTransition] = useState('hidden');
+  const UserMenuList = styled.div`
+  visibility: ${UserMenuListTransition};
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px;
+  gap: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  z-index: 2;  
+  `;
+
+  const UserMenuListText = styled.p`
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    color: ${Blue};
+    text-decoration: underline;
+  }  
   `;
 
   const UserIcon = styled(UserImg)`
@@ -147,6 +170,16 @@ const HeaderMenu = () => {
   width: 20px;
   height: 20px;
   margin: 0 10px 0 5px;
+  `;
+
+  const [ShoppingBasketTransition, setShoppingBasketTransition] = useState('hidden'); 
+  const ShoppingBasket = styled(UserMenuList)`
+  visibility: ${ShoppingBasketTransition};
+  min-width: 300px;
+  justify-self: flex-end;
+  `;
+
+  const ShoppingBasketText = styled(UserMenuListText)`
   `;
 
   return (
@@ -199,13 +232,23 @@ const HeaderMenu = () => {
         <MicIcon/>
         <SearchIcon/>
       </SearchForm>
-      <UserMenu>
+      <UserMenu onMouseOver={() => setUserMenuListTransition('visible')} onMouseOut={() => setUserMenuListTransition('hidden')}>
         <UserIcon/>
-        <UserMenuText>마이쿠팡</UserMenuText>
+        <UserMenuText>마이쿠팡
+          <UserMenuList>
+            <UserMenuListText>주문목록</UserMenuListText>
+            <UserMenuListText>취소/반품</UserMenuListText>
+            <UserMenuListText>찜 리스트</UserMenuListText>
+          </UserMenuList> 
+        </UserMenuText>
       </UserMenu>
-      <UserMenu>
+      <UserMenu onMouseOver={() => setShoppingBasketTransition('visible')} onMouseOut={() => setShoppingBasketTransition('hidden')}>
         <CartIcon/>
-        <UserMenuText>장바구니</UserMenuText>
+        <UserMenuText>장바구니
+          <ShoppingBasket>
+            <ShoppingBasketText>장바구니에 담긴 상품이 없습니다.</ShoppingBasketText>
+          </ShoppingBasket>
+        </UserMenuText>
       </UserMenu>
     </HeaderMenu>
 

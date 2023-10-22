@@ -37,8 +37,8 @@ const Top = () => {
   `;
 
   const [TopListTransition, setTopListTransition] = useState('hidden');
-                    const TopList = styled.div`
-                    visibility: ${TopListTransition};
+  const TopList = styled.div`
+  visibility: ${TopListTransition};
   position: absolute;
   top: 34px;
   right: -34px;
@@ -60,6 +60,14 @@ const Top = () => {
   }
   `;
 
+  const GoToLogin = () => {
+    window.location.replace('/login');
+  }
+
+  const GoToSignup = () => {
+    window.location.replace('/signup');
+  }
+
   return(
     <Top>
       <TopWrapper>
@@ -75,8 +83,8 @@ const Top = () => {
           </TopText>
         </TopContainer>
         <TopContainer>
-          <TopText>로그인</TopText>
-          <TopText>회원가입</TopText>
+          <TopText onClick={GoToLogin}>로그인</TopText>
+          <TopText onClick={GoToSignup}>회원가입</TopText>
           <TopText>고객센터</TopText>
         </TopContainer>
       </TopWrapper>

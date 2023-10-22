@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import { ReactComponent as RightArrowImg } from 'assets/right_arrow.svg';
+import { ReactComponent as RightArrowImg } from 'assets/home/right_arrow.svg';
 
 const Today = () => {
   const Blue = '#4285f4';

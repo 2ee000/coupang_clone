@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import $ from 'jquery';
 
-import ShoppingBagImg from 'assets/shoppingbag.png';
-import { ReactComponent as LeftArrowImg } from 'assets/left_arrow.svg';
-import { ReactComponent as RightArrowImg } from 'assets/right_arrow.svg';
-import { ReactComponent as BlueRocketImg } from 'assets/rocket_blue.svg';
-import { ReactComponent as PurpleRocketImg } from 'assets/rocket_purple.svg';
-import { ReactComponent as YellowStarImg } from 'assets/yellow_star.svg';
-import { ReactComponent as HalfStarImg } from 'assets/half_star.svg';
-import { ReactComponent as EmptyStarImg } from 'assets/empty_star.svg';
+import ShoppingBagImg from 'assets/home/shoppingbag.png';
+import { ReactComponent as LeftArrowImg } from 'assets/home/left_arrow.svg';
+import { ReactComponent as RightArrowImg } from 'assets/home/right_arrow.svg';
+import { ReactComponent as BlueRocketImg } from 'assets/home/rocket_blue.svg';
+import { ReactComponent as PurpleRocketImg } from 'assets/home/rocket_purple.svg';
+import { ReactComponent as YellowStarImg } from 'assets/home/yellow_star.svg';
+import { ReactComponent as HalfStarImg } from 'assets/home/half_star.svg';
+import { ReactComponent as EmptyStarImg } from 'assets/home/empty_star.svg';
 
 const Propse = () => {
   const Blue = '#4285f4';
@@ -21,8 +21,9 @@ const Propse = () => {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 20px;
   gap: 20px;
-  border-bottom: 1px solid ${Gray};
+  border-bottom: 1px solid #EEEEEE;
   `;
 
   const PropseText = styled.div`
@@ -90,6 +91,10 @@ const Propse = () => {
   align-items: center;
   justify-content: center;
   background-color: ${Gray};
+  opacity: 0.5;
+  &&:hover {
+    opacity: 1;
+  }
   `;
 
   const PropseScrollLeftArrow = styled(LeftArrowImg)`
@@ -111,14 +116,18 @@ const Propse = () => {
   }
   `;
   const PropseContent = styled.li`
+  cursor: pointer;
   width: 200px;
   height: 300px;
   display: flex;
   flex-flow: column nowrap;
   gap: 5px;
-  &&:hover p:first-child {
+  &&:hover a:first-child {
     color: ${Blue};
     text-decoration: underline;
+  }
+  &&:hover div {
+    text-decoration: none;
   }
   `;
 
@@ -137,7 +146,7 @@ const Propse = () => {
   font-size: 16px;
   font-weight: bold;
   background-color: red;
-  color: #ffffff;
+  color: #FFFFFF;
   `;
 
   const PropseContentText = styled.div`
@@ -148,7 +157,7 @@ const Propse = () => {
   gap: 5px;
   `;
 
-  const PropseContentTitle = styled.p`
+  const PropseContentTitle = styled.a`
   font-size: 14px;
   color: #111111;
   display: block;
@@ -208,6 +217,13 @@ const Propse = () => {
   margin-left: 5px;
   font-size: 12px;
   color: gray;
+  `;
+
+  const Advertisement = styled.p`
+  font-size: 12px;
+  color: #555555;
+  align-self: end;
+  opacity: .3;
   `;
 
   return(
@@ -301,6 +317,7 @@ const Propse = () => {
           <PropseContentImg/>
         </PropseContent>
       </PropseList>
+      <Advertisement>광고</Advertisement>
     </Propse>
   )
 }

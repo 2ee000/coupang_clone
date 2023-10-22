@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Top from './Top';
+import Top from './Top/Top';
 import Header from './Header/Header';
 import Banner from './Banner/Banner';
 import Body from './Body/Body'
+import Footer from './Footer/Footer'
 
 const Home = () => {
   const App = styled.div`
@@ -29,6 +30,7 @@ const Home = () => {
         <Header/>
         <Banner/>
         <Body/>
+        <Footer/>
       </Container>
     </App>
   )
